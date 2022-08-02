@@ -7,8 +7,8 @@ def do_twice(func):
 
     @functools.wraps(func)
     def wrapper_do_twice(*args, **kwargs):
-        ....
-        return ....
+        func()
+        return func()
 
     return wrapper_do_twice
 
